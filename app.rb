@@ -16,7 +16,11 @@ get '/another' do
   "anothe"
 end
 
-get '/named-cat' do
+get '/cat' do
+  erb(:form)
+end
+
+post '/named-cat' do
   @name = params[:name]
   erb(:index)
 end
